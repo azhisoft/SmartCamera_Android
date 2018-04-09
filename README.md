@@ -75,7 +75,7 @@ g.discover(g.getSupported(), new CameraDiscoveryConsumer(){
             
             if(rtmpconf != null)
                 System.out.println(String.format("ENABLED: %s, RTMP: %s, USER: %s, PWD: %s",
-                    rtmpconf.enabled() ? "yes" : "no", rtmpconf.rtmpUrl, rtmpconf.user, rtmpconf.password));
+                    rtmpconf.enabled ? "yes" : "no", rtmpconf.rtmpUrl, rtmpconf.user, rtmpconf.password));
             
             // 读取摄像头 RTSP 播放地址
             RtspConfig rtspconf = camera.getRtsp();
